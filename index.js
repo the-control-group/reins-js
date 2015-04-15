@@ -1,11 +1,11 @@
 'use strict';
 
 var fs = require('fs');
-var script = fs.readFileSync('index.lua');
+var script = fs.readFileSync('script.lua');
 
 module.exports = function(client) {
 
-	function rein(id, interval, callback) {
+	function reins(id, interval, callback) {
 
 		// put the interval in µs
 		interval = interval * 1000;
@@ -18,8 +18,8 @@ module.exports = function(client) {
 		this.client.eval(script, 1, key, since, interval, callback);
 	}
 
-	rein.client = client;
+	reins.client = client;
 
-	return rein.bind(rein);
+	return reins.bind(reins);
 
 }

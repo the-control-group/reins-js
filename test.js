@@ -6,12 +6,12 @@ client.on('error', function (err) {
 });
 
 
-var rein = require('./index.js')(client);
+var reins = require('./index.js')(client);
 
-rein('foo', 1000, console.log.bind(console));
-rein('foo', 1000, console.log.bind(console));
-rein('foo', 1000, console.log.bind(console));
-rein('foo', 1000, console.log.bind(console));
-rein('foo', 1000, console.log.bind(console));
-rein('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
+reins('foo', 1000, console.log.bind(console));
 
